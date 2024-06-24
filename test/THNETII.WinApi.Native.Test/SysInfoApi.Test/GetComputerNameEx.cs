@@ -96,7 +96,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
             Assert.NotNull(path);
         }
 
-        [TheoryWindowsOS(Skip = "Disabled and blocked on https://github.com/thnetii/windows-api/pull/105")]
+        [TheoryWindowsOS]
         [MemberData(nameof(Get_COMPUTER_NAME_FORMAT))]
         public static void Can_call_unicode_marshaling_extern_function(COMPUTER_NAME_FORMAT nameType)
         {
@@ -108,7 +108,7 @@ namespace THNETII.WinApi.Native.SysInfoApi.Test
             Assert.NotNull(path);
         }
 
-        [TheoryWindowsOS(Skip = "Disabled and blocked on https://github.com/thnetii/windows-api/pull/105")]
+        [TheoryWindowsOS]
         [MemberData(nameof(Get_COMPUTER_NAME_FORMAT))]
         public static void Can_call_auto_marshaling_extern_function(COMPUTER_NAME_FORMAT nameType)
         {
